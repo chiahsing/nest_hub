@@ -9,7 +9,7 @@ The script works the best when the device is a dedicated dashboard (i.e. you don
 
 Install [pyscript](https://hacs-pyscript.readthedocs.io/en/latest/) and [DashCast](https://github.com/AlexxIT/DashCast) and [ha-catt-fix](https://github.com/swiergot/ha-catt-fix) (optional) from HACS. 
 
-Create a `nest_hub` folder under `/config/pyscript/apps/`, and put `__init__.py` in it. Then, in `pyscript`'s `config.yaml`, add the following section:
+Create a `nest_hub` folder under `/config/pyscript/apps/`, and put `__init__.py` in it. Then, in `pyscript`'s [configuration](https://hacs-pyscript.readthedocs.io/en/latest/configuration.html), add the following section:
 ```
 apps:
   nest_hub:
