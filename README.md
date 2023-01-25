@@ -27,7 +27,7 @@ apps:
 | dashboard_url | The URL to cast. | string | | Yes |
 | entities | A list of Nest Hub entities. See below. | list | | Yes |
 | enable_switch | If set, the entity ID specified in this field (usually an input_boolean) will be used to control whether the dashboard should be casted. | string | | No |
-| off_duration | If >= 0, the script will cast the dashboard to the device when its state is `off` for the specified number of seconds. Can be set to a negative number to disable the feature. | int | 10 | No |
+| off_duration | If >= 0, the script will cast the dashboard to the device when its state is `off` for the specified number of seconds. Can be set to a negative number to disable the feature. If you set this field to 0, the script will aggressively cast the dashboard to the device. You may not be able to use the device for other purposes. | int | 10 | No |
 | idle_duration | If >= 0, the script will cast the dashboard to the device when its state is `idle` for the specified number of seconds. Can be set to a negative number to disable the feature. | int | 180 | No |
 | paused_duration | If >= 0, the script will cast the dashboard to the device when its state is `paused` for the specified number of seconds. Can be set to a negative number to disable the feature. | int | 180 | No |
 | dark_theme | If set, the frontend theme will be set to this value when the sun goes down. This setting applies to the whole system. | string | | No  |
