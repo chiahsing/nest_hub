@@ -7,6 +7,8 @@ The script works the best when the device is a dedicated dashboard (i.e. you don
 
 ## Install
 
+Install [pyscript](https://hacs-pyscript.readthedocs.io/en/latest/) and [DashCast](https://github.com/AlexxIT/DashCast) and [ha-catt-fix](https://github.com/swiergot/ha-catt-fix) (optional) from HACS. 
+
 Create a `nest_hub` folder under `/config/pyscript/apps/`, and put `__init__.py` in it. Then, in `pyscript`'s `config.yaml`, add the following section:
 ```
 apps:
@@ -39,7 +41,7 @@ apps:
 
 The entries in the entities field can be either a simple string specifying the entity ID of a Nest Hub device, or a dict specifying per-device configuration. For the second case, all of the configuration fields above can be specified, which will override the global settings. The field `entity_id` needs to be specified in the per-device configuration dict.
 
-### Examples
+### Example
 
 ```
 apps:
